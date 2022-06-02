@@ -1,4 +1,4 @@
-import 'package:clean_arch/features/data/models/number_trivia_model.dart';
+import '../models/number_trivia_model.dart';
 
 abstract class NumberTriviaRemoteDataSource{
 
@@ -12,6 +12,6 @@ Future<NumberTriviaModel>? getConcreteNumberTrivia(int number);
 /// 
 /// Throws a [ServerException] for all error codes
 
-Future<NumberTriviaModel> getRandomNumberTrivia();
+Future<NumberTriviaModel?>? getRandomNumberTrivia();
  
 }
